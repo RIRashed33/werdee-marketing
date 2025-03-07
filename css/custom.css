@@ -1,0 +1,63 @@
+:root {
+    --white: #ffffff;
+    --off-white: #F7F5F2;
+    --text: #333333;
+    --gray: #999999;
+    --primary: #489774;
+    --secondary: #F9D6E0;
+    --hover: #155741;
+    --bg: #073827;
+    --body: "Inter", sans-serif;
+    --pre-header: "JetBrains Mono", monospace;
+    --header: "p22-mackinac-pro";
+}
+body {
+    font-family: var(--body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text);
+}
+body * {
+    display: inline-block;
+    transition: all 0.4s;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+h1, h2, h3, h4 {
+    font-family: var(--header);
+    line-height: 1.11;
+    font-weight: 400;
+}
+h1, .h1 {
+    font-size: 54px;
+    line-height: 1.11;
+}
+h2 {
+    font-size: 42px;
+}
+h3 {
+    font-size: 36px;
+    line-height: 1.17;
+}
+h4 {
+    font-size: 24px;
+    line-height: 1.25;
+}
+h5 {
+    font-size: 18px;
+    font-family: var(--pre-header);
+    font-weight: 600;
+    line-height: 1.17;
+    color: var(--gray);
+}
