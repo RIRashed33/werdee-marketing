@@ -18,11 +18,11 @@ body {
     line-height: 1.5;
     color: var(--text);
 }
-body *:not(style, script) {
-    display: inline-block;
+body * {
     transition: all 0.4s;
 }
 a {
+    display: inline-block;
     text-decoration: none;
 }
 img {
