@@ -1,0 +1,192 @@
+@media screen and (min-width: 992px){
+    #navmenu {
+        justify-content: flex-end;
+    }
+    .mainmenu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    .navbar-right {
+        padding: 20px 0;
+    }
+    .navbar-right .link-with-icon {
+        display: none;
+    }
+    .mainmenu > ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    .mainmenu > ul > li {
+        padding: 29px 0;
+    }
+    .mainmenu > ul > li > a {
+        font-size: 15px;
+        line-height: 32px;
+        font-weight: 500;
+        color: var(--white);
+        position: relative;
+    }
+    .mainmenu > ul > li > a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #E08EA6;
+        transition: all 0.4s;
+    }
+    .mainmenu > ul > li > a:hover::after, .mainmenu > ul > li.active > a::after {
+        width: 100%;
+    }
+    li.menu-item-has-children.active {
+        cursor: pointer;
+    }
+    .megamenu {
+        position: absolute;
+        left: 0;
+        top: calc(100% + 24px);
+        width: 100%;
+        padding-top: 8px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    li.menu-item-has-children.active .megamenu {
+        top: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+    .megamenu-container {
+        padding: 36px 100px 48px;
+        background-color: var(--bg);
+        border-radius: 15px;
+    }
+    .megamenu-title {
+        margin-bottom: 32px;
+    }
+    .megamenu-title h6 {
+        color: var(--white);
+        font-size: 15px;
+        margin: 0;
+        font-weight: 700;
+    }
+    .megamenu-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 32px;
+    }
+    .single-megamenu-item {
+        padding: 12px 8px 12px 14px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        border: 2px dashed transparent;
+        color: var(--white);
+        border-radius: 15px;
+    }
+    .single-megamenu-item:hover {
+        border-color: var(--primary);
+    }
+    .single-megamenu-item .menu-icon {
+        font-size: 14px;
+    }
+    .single-megamenu-item .menu-content h6 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    .single-megamenu-item .menu-content p {
+        font-size: 11px;
+        line-height: 1.45;
+        font-weight: 300;
+    }
+    
+
+
+}
+@media screen and (max-width: 1599px){
+    .megamenu-container {
+        padding: 36px 48px 48px;
+    }
+}
+@media screen and (max-width: 1399px){
+    .megamenu-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+
+}
+@media screen and (max-width: 1199px){
+    .container {
+        max-width: 1000px;
+        padding: 0 12px;
+    }
+    .megamenu-container {
+        padding: 36px;
+    }
+    .megamenu-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+
+
+
+}
+@media screen and (max-width: 991px){
+    .container {
+        max-width: 700px;
+    }
+    .topbar {
+        padding: 12px 0;
+        position: relative;
+        z-index: 9;
+    }
+    body.menu-active .topbar-left :is(p, p a) {
+        color: var(--white);
+    }
+    .main-header {
+        padding: 22px 32px;
+        position: inherit;
+    }
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 9;
+    }
+    .hamburger {
+        display: flex;
+        width: 45px;
+        flex-direction: column;
+        gap: 5px;
+        border: none;
+        padding: 4px 0;
+        background: transparent;
+    }
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+    #navmenu {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: var(--bg);
+    }
+
+
+}
+@media screen and (max-width: 767px){
+    .container {
+        max-width: 520px;
+    }
+}

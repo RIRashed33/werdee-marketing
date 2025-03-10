@@ -21,6 +21,9 @@ body {
 body * {
     transition: all 0.4s;
 }
+body *:last-child {
+    margin-bottom: 0;
+}
 a {
     display: inline-block;
     text-decoration: none;
@@ -60,4 +63,59 @@ h5 {
     font-weight: 600;
     line-height: 1.17;
     color: var(--gray);
+}
+h6 {
+    line-height: 1.5;
+}
+.container {
+    max-width: 1600px;
+    padding: 0 100px;
+}
+.link-with-icon {
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.link-with-icon.small {
+    font-size: 13px;
+}
+.primary-solid {
+    padding: 13px 30px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 5px 50px 50px 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.primary-solid i {
+    line-height: 24px;
+    font-size: 20px;
+}
+.primary-solid:hover {
+    background-color: var(--hover);
+}
+/* Site Header */
+.topbar {
+    padding: 16px 24px 16px 32px;
+}
+.topbar-left p {
+    font-size: 13px;
+}
+.topbar-left p a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.topbar-right {
+    display: flex;
+    gap: 24px;
+}
+.main-header {
+    background-color: var(--bg);
+    padding: 0 24px 0 32px;
+    border-radius: 100px;
+    position: relative;
 }
