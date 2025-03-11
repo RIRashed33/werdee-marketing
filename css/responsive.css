@@ -163,6 +163,7 @@
         display: flex;
         width: 45px;
         flex-direction: column;
+        align-items: center;
         gap: 5px;
         border: none;
         padding: 4px 0;
@@ -174,6 +175,22 @@
         height: 5px;
         background-color: var(--primary);
         border-radius: 5px;
+        position: relative;
+        top: 0;
+    }
+    body.menu-active .hamburger span {
+        background-color: #E08EA6;
+    }
+    body.menu-active .hamburger span:first-child {
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+    body.menu-active .hamburger span:last-child {
+        transform: rotate(45deg);
+        top: -10px;
+    }
+    body.menu-active .hamburger span:nth-child(2) {
+        width: 0;
     }
     #navmenu {
         position: absolute;
@@ -182,7 +199,20 @@
         top: 0;
         background: var(--bg);
     }
+    nav.mainmenu {
+        max-width: 700px;
+        padding: 140px 45px 48px;
+        margin: 0 auto;
+    }
 
+
+
+
+
+
+.megamenu {
+    display: none;
+}
 
 }
 @media screen and (max-width: 767px){
