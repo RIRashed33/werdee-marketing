@@ -35,7 +35,7 @@
         bottom: 0;
         width: 0;
         height: 2px;
-        background-color: #E08EA6;
+        background-color: var(--tertiary);
         transition: all 0.4s;
     }
     .mainmenu > ul > li > a:hover::after, .mainmenu > ul > li.active > a::after {
@@ -179,7 +179,7 @@
         top: 0;
     }
     body.menu-active .hamburger span {
-        background-color: #E08EA6;
+        background-color: var(--tertiary);
     }
     body.menu-active .hamburger span:first-child {
         transform: rotate(-45deg);
@@ -217,7 +217,7 @@
         font-size: 18px;
     }
     nav.mainmenu ul li a:hover {
-        color: #E08EA6;
+        color: var(--tertiary);
     }
     .navbar-right {
         display: flex;
@@ -243,7 +243,7 @@
         position: absolute;
         right: -32px;
         top: calc( 50% - 9px);
-        color: #E08EA6;
+        color: var(--tertiary);
     }
     .megamenu {
         position: absolute;
@@ -280,7 +280,7 @@
     }
     button.back-btn i {
         font-size: 18px;
-        color: #E08EA6;
+        color: var(--tertiary);
         line-height: 1;
     }
     .megamenu-grid {
@@ -303,6 +303,13 @@
         font-size: 14px;
         line-height: 1;
     }
+    footer.site-footer {
+        background-image: none;
+        padding: 64px 0 32px;
+    }
+    .footer-top-content {
+        margin-bottom: 32px;
+    }
 
 
 
@@ -314,6 +321,9 @@
 @media screen and (max-width: 767px){
     .container, nav.mainmenu, .megamenu-container {
         max-width: 520px;
+    }
+    .footer-menu-group {
+        display: none;
     }
 
 
