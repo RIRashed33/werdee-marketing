@@ -252,7 +252,7 @@
         left: -100%;
         background-color: var(--bg);
     }
-    li.menu-item-has-children.show .megamenu {
+    li.menu-item-has-children.active .megamenu {
         left: 0;
     }
     .megamenu-container {
