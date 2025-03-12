@@ -136,7 +136,7 @@ footer.site-footer {
     background-color: var(--bg);
     color: var(--white);
     padding: 96px 0 48px;
-    background-image: url(../img/footer-bg-vector.png);
+    background-image: url(../img/footer-bg-vector.webp);
     background-repeat: no-repeat;
     background-position: center right;
 }
