@@ -1,3 +1,8 @@
+@media screen and (min-width: 1400px) {
+    section.content-carousel .container {
+        max-width: 1400px;
+    }
+}
 @media screen and (min-width: 992px){
     #navmenu {
         justify-content: flex-end;
@@ -102,6 +107,7 @@
         line-height: 1.45;
         font-weight: 300;
     }
+
     
 
 
@@ -324,6 +330,9 @@
     }
     .footer-menu-group {
         display: none;
+    }
+    .header-bottom {
+        padding: 12px 0;
     }
 
 

@@ -56,3 +56,25 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 });
+
+(function($){
+    $(document).ready(function ($) {
+        var content_with_image_carousel = $("#content_with_image_carousel");
+        content_with_image_carousel.owlCarousel({
+            loop: false,
+            margin: 60,
+            autoWidth: true,
+            nav: false,
+            dots: false,
+            items: 3
+        });
+
+        $("#content_with_image_carousel_nav .prev").click(function() {
+            content_with_image_carousel.trigger("prev.owl.carousel");
+        });
+
+        $("#content_with_image_carousel_nav .next").click(function() {
+            content_with_image_carousel.trigger("next.owl.carousel");
+        });
+    });
+}(jQuery));

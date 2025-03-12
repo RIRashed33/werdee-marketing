@@ -164,7 +164,7 @@
                     <div class="left-member-img">
                         <img src="./img/header-member-img.webp" alt="member">
                     </div>
-                    <div class="header-right-content">
+                    <div class="bottom-right-content">
                         <p>Join over 5,000 marketing pros who trust Werdee. <a href="#">Sign Up</a></p>
                     </div>
                 </div>
@@ -175,15 +175,15 @@
     <main>
         <section class="main-hero">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg">
                         <div class="main-hero-left">
-                            <h5>Join over 5,000 marketing pros who trust Werdee. Sign Up</h5>
+                            <h5 class="mb-4">Join over 5,000 marketing pros</h5>
                             <h1>The human way to create better marketing copy—and <span>it’s faster</span> than AI.</h1>
                             <p>Say goodbye to prompt engineering and endless edits. Werdee delivers marketing copy templates that are clear, concise, and polished—so you can quickly publish with confidence.</p>
                             <div class="btn-group">
                                 <a href="#" class="primary-solid">Get Started—It’s Free <i class="fa-regular fa-arrow-right-long"></i></a>
-                                <a href="#" class="primary-transparent"><i class="fa-light fa-video"></i> Take a Tour</a>
+                                <a href="#" class="hover-transparent"><i class="fa-light fa-video"></i> Take a Tour</a>
                             </div>
                         </div>
                     </div>
@@ -246,40 +246,40 @@
         <section class="content-carousel">
             <div class="container">
                 <div class="carousel-heading">
-                    <div class="h2">Packed with professionally written fill-in-the-blank copy.</div>
-                    <div class="carousel-navigation">
+                    <h2>Packed with professionally written fill-in-the-blank copy.</h2>
+                    <div class="carousel-navigation" id="content_with_image_carousel_nav">
                         <button class="prev"><i class="fa-light fa-angle-left"></i></button>
                         <button class="next"><i class="fa-light fa-angle-right"></i></button>
                     </div>
-                    <div class="carousel-contet">
-                        <div class="owl-carousel">
-                            <div class="item">
-                                <div class="single-carousel-image">
-                                    <img src="./img/sample-300x450.webp" alt="sample">
-                                </div>
+                </div>
+                <div class="carousel-contet">
+                    <div class="owl-carousel" id="content_with_image_carousel">
+                        <div class="item">
+                            <div class="single-carousel-image">
+                                <img src="./img/sample-300x450.webp" alt="sample">
                             </div>
-                            <div class="item">
-                                <div class="single-carousel-content pink">
-                                    <div>
-                                        <h2>99%</h2>
-                                        <p>No more prompt engineering. No more grammar gymnastics. Just amazing fill-in-the-blank marketing copy templates.</p>
-                                    </div>
-                                    <span>*Based on our internal survey A</span>
+                        </div>
+                        <div class="item">
+                            <div class="single-carousel-content pink">
+                                <div>
+                                    <h2>99%</h2>
+                                    <p>No more prompt engineering. No more grammar gymnastics. Just amazing fill-in-the-blank marketing copy templates.</p>
                                 </div>
+                                <span>*Based on our internal survey A</span>
                             </div>
-                            <div class="item">
-                                <div class="carousel-image">
-                                    <img src="./img/sample-300x450-2.webp" alt="sample">
-                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-carousel-image">
+                                <img src="./img/sample-300x450-2.webp" alt="sample">
                             </div>
-                            <div class="item">
-                                <div class="single-carousel-content pink">
-                                    <div>
-                                        <h5>Craft better.</h5>
-                                        <h4>Werdee saves marketers over 673 hours a year while also improving their marketing KPIs.*</h4>
-                                    </div>
-                                    <span>*Based on our internal survey of our users in 2024</span>
+                        </div>
+                        <div class="item">
+                            <div class="single-carousel-content bg">
+                                <div>
+                                    <h5>Craft better.</h5>
+                                    <h4>Werdee saves marketers over 673 hours a year while also improving their marketing KPIs.*</h4>
                                 </div>
+                                <span>*Based on our internal survey of our users in 2024</span>
                             </div>
                         </div>
                     </div>
@@ -402,6 +402,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/9ff5fb97fe.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
