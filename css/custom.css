@@ -126,7 +126,7 @@ p {
     background: transparent;
     border: 1px solid var(--hover);
     border-radius: 5px 50px 50px 5px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 10px;
     font-weight: 600;
