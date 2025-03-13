@@ -472,3 +472,20 @@ section.faq-section h3 {
     font-weight: 500;
     margin-bottom: 32px;
 }
+.faq-content {
+    background: var(--off-white);
+    border-radius: 15px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.single-faq-item {
+    padding: 16px 0;
+    border-bottom: 1px dashed #DDDDDD;
+}
+.single-faq-item:last-child {
+    border: none;
+}
+.single-faq-item .faq-question {
+    
+}
