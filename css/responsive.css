@@ -2,6 +2,7 @@
     .w-1200 {
         max-width: 1400px;
     }
+    
 }
 @media screen and (min-width: 992px){
     #navmenu {
@@ -115,21 +116,18 @@
         padding-right: 24px;
     }
 
-    
-
-
 }
 @media screen and (max-width: 1599px){
     .megamenu-container {
         padding: 36px 48px 48px;
     }
+
 }
 @media screen and (max-width: 1399px){
     .megamenu-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
     }
-
 
 }
 @media screen and (max-width: 1199px){
@@ -144,9 +142,6 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
     }
-
-
-
 
 }
 @media screen and (max-width: 991px){
@@ -355,7 +350,7 @@
     .centered-headline-content h5 {
         margin-bottom: 24px;
     }
-    .centered-headline-content h2 {
+    .centered-headline-content h2, .hero-heading-content {
         margin-bottom: 48px;
     }
     .image-group {
@@ -377,10 +372,23 @@
     section.full-width-section {
         background: none;
     }
-
-
-
-
+    section.full-width-hero {
+        padding: 40px 0;
+    }
+    .customers-content {
+        padding: 32px 48px;
+    }
+    .customer-logos {
+        justify-content: space-between;
+    }
+    .hover-tab-heading ul li a {
+        font-size: 30px;
+        padding-right: 40px;
+    }
+    .hover-tab-heading ul li a::after {
+        font-size: 26px;
+        top: 7px;
+    }
 
 }
 @media screen and (max-width: 767px){
@@ -397,11 +405,23 @@
         font-size: 42px;
         line-height: 1.2;
     }
+    h2, .full-length-cta-content h2 {
+        font-size: 36px;
+    }
     .carousel-heading {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .customers-content {
+        padding: 24px 20px;
+        border-radius: 15px;
+    }
+    .customers-heading {
+        margin-bottom: 32px;
+    }
+    .customer-logos {
+        gap: 24px;
+    }
 
 }
 @media screen and (max-width: 575px){
@@ -414,7 +434,5 @@
     .single-carousel-content, .single-carousel-image {
         width: 330px;
     }
-
-
 
 }
