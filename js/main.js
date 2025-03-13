@@ -62,11 +62,17 @@ document.addEventListener("DOMContentLoaded", function () {
         var content_with_image_carousel = $("#content_with_image_carousel");
         content_with_image_carousel.owlCarousel({
             loop: false,
-            margin: 60,
             autoWidth: true,
             nav: false,
             dots: false,
-            items: 3
+            responsive : {
+                0 : {
+                    margin : 24,
+                },
+                575 : {
+                    margin : 60,
+                }
+            }
         });
 
         $("#content_with_image_carousel_nav .prev").click(function() {

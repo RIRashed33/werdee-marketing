@@ -370,13 +370,14 @@ span.teaser-divider {
     margin-top: 72px;
 }
 section.content-carousel {
-    padding: 80px 0;
     overflow: hidden;
 }
 .carousel-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    row-gap: 24px;
+    column-gap: 48px;
     margin-bottom: 32px;
 }
 .carousel-heading h2 {
@@ -402,8 +403,7 @@ section.content-carousel {
     line-height: 32px;
 }
 .single-carousel-content, .single-carousel-image {
-    max-width: 360px;
-    width: 100%;
+    width: 360px;
     height: 100%;
 }
 .single-carousel-content {
@@ -644,4 +644,10 @@ ul.checkmark-list-content li::after {
     position: absolute;
     left: 0;
     top: 7px;
+}
+section.full-width-section {
+    padding: 40px 0 0;
+    background-image: url(../img/full-width-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
