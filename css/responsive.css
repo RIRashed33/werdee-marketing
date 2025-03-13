@@ -1,5 +1,5 @@
 @media screen and (min-width: 1400px) {
-    section.content-carousel .container {
+    .w-1200 {
         max-width: 1400px;
     }
 }
@@ -106,6 +106,13 @@
         font-size: 11px;
         line-height: 1.45;
         font-weight: 300;
+    }
+    .hero-heading-right, .inner-content {
+        padding-left: 100px;
+    }
+    .right-aligned-image .inner-content {
+        padding-left: 0;
+        padding-right: 24px;
     }
 
     
