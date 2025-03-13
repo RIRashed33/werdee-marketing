@@ -487,5 +487,31 @@ section.faq-section h3 {
     border: none;
 }
 .single-faq-item .faq-question {
-    
+    border: none;
+    background: none;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 700;
+    color: var(--text);
+    padding: 3px 0 3px 36px;
+    display: block;
+    width: 100%;
+    text-align: start;
+    position: relative;
+}
+.single-faq-item .faq-question::before, .single-faq-item .faq-question::after {
+    content: '';
+    width: 16px;
+    height: 1px;
+    border-radius: 1px;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+}
+.single-faq-item .faq-question.collapsed::after {
+    transform: rotate(90deg);
+}
+.single-faq-item .faq-answer {
+    padding: 16px 24px 4px 36px;
 }
