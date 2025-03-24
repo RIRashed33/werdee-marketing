@@ -55,6 +55,16 @@ document.addEventListener("DOMContentLoaded", function () {
         item.addEventListener("click", addClickEvent);
     })
 
+
+    document.getElementById("pricing_toggle").addEventListener("change", function () {
+        this.parentElement.classList.toggle("active");
+    });
+
+    document.getElementById("pricing_toggle").addEventListener("change", function () {
+        let text = document.querySelector(".pricing-toggle-switch .toggle-text");
+        text.innerHTML = this.checked ? "Monthly" : "Yearly";
+    });
+      
 });
 
 (function($){

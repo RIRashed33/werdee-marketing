@@ -770,3 +770,45 @@ section.full-width-section {
     background-repeat: no-repeat;
     background-position: center right;
 }
+.pricing-toggle-switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 120px; /* Adjusted for text */
+    height: 40px;
+    background: #4c8b6e;
+    border-radius: 20px;
+    transition: 0.3s;
+    padding: 5px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.pricing-toggle-switch input {
+    display: none;
+}
+.pricing-toggle-switch  .slider {
+    position: absolute;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.pricing-toggle-switch .toggle-text {
+    flex-grow: 1;
+    text-align: center;
+    transition: 0.3s;
+}
+.pricing-toggle-switch input:checked + .slider {
+    transform: translateX(75px);
+}
+.pricing-toggle-switch input:checked ~ .toggle-text {
+    content: "Monthly";
+}
+
+
+
+  
