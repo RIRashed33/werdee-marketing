@@ -497,14 +497,15 @@
 
 }
 @media screen and (max-width: 575px){
-    .main-hero-right {
-        display: block;
-    }
-    .main-hero-right > *:not(.full-img) {
-        margin-bottom: 24px;
-    }
-    .single-carousel-content, .single-carousel-image {
-        width: 330px;
-    }
+	.main-hero-right {
+		display: block;
+	}
+	.main-hero-right > *:not(.full-img) {
+		margin-bottom: 24px;
+		max-width: 100%;
+	}
+	.single-carousel-content, .single-carousel-image {
+		width: 330px;
+	}
 
 }
