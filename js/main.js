@@ -49,12 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-
     let backBtns = document.querySelectorAll(".back-btn");
     backBtns.forEach(item => {
         item.addEventListener("click", addClickEvent);
     })
-
 
     document.getElementById("pricing_toggle").addEventListener("change", function () {
         this.parentElement.classList.toggle("active");
