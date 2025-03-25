@@ -62,7 +62,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("pricing_toggle").addEventListener("change", function () {
         let text = document.querySelector(".pricing-toggle-switch .toggle-text");
-        text.innerHTML = this.checked ? "Monthly" : "Yearly";
+        text.innerHTML = this.checked ? "Yearly" : "Monthly";
+        if(this.checked){
+            document.querySelector(".pricing-html .yearly-price").classList.add("active");
+            document.querySelector(".pricing-html .monthly-price").classList.remove("active");
+        }else{
+            document.querySelector(".pricing-html .monthly-price").classList.add("active");
+            document.querySelector(".pricing-html .yearly-price").classList.remove("active");
+        }
     });
       
 });

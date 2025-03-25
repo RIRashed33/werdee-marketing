@@ -107,7 +107,7 @@ section {
 .link-with-icon.small {
     font-size: 13px;
 }
-.primary-solid {
+.primary-solid, .tertiary-solid {
     padding: 13px 30px;
     font-weight: 600;
     color: var(--white);
@@ -770,45 +770,179 @@ section.full-width-section {
     background-repeat: no-repeat;
     background-position: center right;
 }
+
+
+
+
+
+
+
+
+
+.tertiary-solid {
+    background-color: var(--tertiary);
+}
+.tertiary-solid:hover {
+    background: #c92e5b;
+}
+
+
+
+section.pricing-block {
+    padding: 40px 0;
+}
+.pricing-plans {
+    padding: 80px 0;
+    border-top: 1px dashed var(--bg);
+    border-bottom: 1px dashed var(--bg);
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.pricing-plans > * {
+    flex: 1;
+}
+.single-plan {
+    padding: 48px 50px 60px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 25px;
+    background: var(--off-white);
+}
+.single-plan.free .plan-name h6 {
+    color: var(--tertiary);
+}
+.single-plan .plan-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+.single-plan .plan-name span {
+    padding: 4px 24px;
+    border-radius: 5px 50px 50px 6px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 22px;
+}
+.single-plan.free .plan-name span {
+    background: var(--tertiary);
+}
+.single-plan .plan-name h6 {
+    font-family: var(--pre-header);
+    font-weight: 700;
+}
+.single-plan.pro .plan-name span {
+    background: var(--primary);
+}
+.single-plan.pro .plan-name h6 {
+    color: var(--primary);
+}
+.single-plan .plan-pricing {
+    border-bottom: 1px dashed var(--bg);
+    border-top: 1px dashed var(--bg);
+    display: flex;
+}
+.single-plan .pricing-html {
+    padding: 24px 0;
+    flex: 0 0 160px;
+    position: relative;
+}
+.single-plan .pricing-html :is(.monthly-price, .yearly-price) {
+    opacity: 0;
+    visibility: hidden;
+}
+.single-plan .pricing-html .yearly-price {
+    position: absolute;
+    inset: 0;
+    padding: 24px 0;
+}
+.single-plan .pricing-html .monthly-price.active, .single-plan .pricing-html .yearly-price.active {
+    opacity: 1;
+    visibility: visible;
+}
+.single-plan .pricing-html h2 {
+    margin-bottom: 0;
+    line-height: 64px;
+    font-size: 72px;
+    font-style: italic;
+}
+.single-plan .pricing-html span {
+    font-size: 12px;
+    font-weight: 500;
+}
+.single-plan.free .pricing-html h2 {
+    color: var(--tertiary);
+}
+.single-plan.pro .pricing-html h2 {
+    color: var(--primary);
+}
+.single-plan .plan-pricing .pricing-switch {
+    padding: 24px 0 24px 32px;
+    border-left: 1px dashed var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.single-plan .plan-pricing .pricing-switch > span {
+    font-size: 12px;
+    font-weight: 500;
+}
 .pricing-toggle-switch {
     display: flex;
     align-items: center;
     cursor: pointer;
     position: relative;
-    width: 120px; /* Adjusted for text */
-    height: 40px;
-    background: #4c8b6e;
+    width: 88px;
+    height: 25px;
+    background: var(--primary);
     border-radius: 20px;
     transition: 0.3s;
-    padding: 5px;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    padding: 2px 3px;
+    color: var(--white);
+    font-size: 12px;
+    margin-bottom: 8px;
 }
 .pricing-toggle-switch input {
     display: none;
 }
 .pricing-toggle-switch  .slider {
     position: absolute;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background: white;
+    left: 3px;
+    width: 21px;
+    height: 21px;
+    background: var(--white);
     border-radius: 50%;
     transition: 0.3s;
 }
-.pricing-toggle-switch .toggle-text {
+.pricing-toggle-switch span.toggle-text {
     flex-grow: 1;
-    text-align: center;
     transition: 0.3s;
+    text-align: center;
+    padding-left: 16px;
+}
+label.pricing-toggle-switch.active span.toggle-text {
+    padding-left: 0;
+    padding-right: 16px;
 }
 .pricing-toggle-switch input:checked + .slider {
-    transform: translateX(75px);
+    transform: translateX(61px);
 }
 .pricing-toggle-switch input:checked ~ .toggle-text {
-    content: "Monthly";
+    content: "Yearly";
 }
-
-
-
+.single-plan p {
+    margin-bottom: 0;
+}
+.single-plan.free p span {
+    color: var(--tertiary);
+}
+.single-plan.pro p span, .single-plan.pro ul.checkmark-list-content li:after {
+    color: var(--primary);
+}
+.single-plan .get-starting-btn {
+    margin-top: auto;
+}
   
